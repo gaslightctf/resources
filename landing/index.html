@@ -1,218 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gaslightCTF 2026</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            padding: 20px;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .logo {
-            max-width: 500px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 40px;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .event-date {
-            font-size: 1.3rem;
-            margin-bottom: 50px;
-            opacity: 0.9;
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 50px;
-            flex-wrap: wrap;
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 30px 25px;
-            min-width: 120px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-
-        .countdown-value {
-            font-size: 3rem;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .countdown-label {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.8;
-        }
-
-        .event-status {
-            font-size: 1.5rem;
-            padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        }
-
-        .live-pulse {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            background: #4ade80;
-            border-radius: 50%;
-            margin-right: 10px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.5;
-                transform: scale(1.1);
-            }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .logo {
-                max-width: 350px;
-            }
-
-            .event-date {
-                font-size: 1.1rem;
-            }
-
-            .countdown {
-                gap: 15px;
-            }
-
-            .countdown-item {
-                min-width: 100px;
-                padding: 20px 15px;
-            }
-
-            .countdown-value {
-                font-size: 2.2rem;
-            }
-
-            .countdown-label {
-                font-size: 0.85rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="wide.png" alt="gaslightCTF 2026" class="logo">
+<html>
+    <link rel="stylesheet" href="landing1.css">
+    <script src="landing1.js" type="text/javascript" defer></script>
+    <body>
         
-        <div class="event-date">
-            August 21-24, 2026 • 12:00 UTC
+        <!--* hi - riley *-->
+        <header>
+            <div class="logo">
+                <img class= "overlayTop logoAspectRatio" src="assets/gaslightCTFlogo.gif" alt="gaslightCTF logo">
+                <img class= "logoAspectRatio" src="assets/logoBackground.png">
+                
+            </div>
+            <nav class="navbar">
+                <div> 
+                    <a href="">home</a>
+                </div>
+                <div> 
+                    <a href="">rules</a>
+                </div>
+                <div> 
+                    <a href="#sponsors">sponsors</a>
+                </div>
+                <div> 
+                    <a href="#socials">socials</a>
+                </div>
+                <div> 
+                    <a href="">leaderboard</a>
+                </div>
+                <div> 
+                    <a href="">team</a>
+                </div>
+                <div> 
+                    <a href="">log in</a>
+                </div>
+                <div> 
+                    <a href="">sign up</a>
+                </div>
+            </nav>
+        </header>
+        <div class="emptyContainer">
+            <div class="container scale width-35">
+                <h1 class="textBlock scale">What is gaslightCTF?</h1>
+                <p class="textBlock scale">
+                    We need main page, with logo and date/time. Two action buttons, one to access the ctf platform and one for discord.
+                    <br><br>
+                    Focus on the fact that we are targeting beginners/UK secondary school students. Similar to xxxxCTF theme.
+                </p>
+            </div>
+            <div class="timeBomb scale">
+                <h1 class= "overlayTop timer timerAspectRatio" >
+                    <span id="days">--</span> DAYS<br>
+                    <span id="hours">--</span> HOURS<br>
+                    <span id="minutes">--</span> MINUTES<br>
+                    <span id="seconds">--</span> SECONDS
+                </h1>
+                <img class="timerAspectRatio" src="assets/timeBomb.png">
+            </div>   
         </div>
 
-        <div id="countdown" class="countdown">
-            <div class="countdown-item">
-                <span class="countdown-value" id="days">--</span>
-                <span class="countdown-label">Days</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-value" id="hours">--</span>
-                <span class="countdown-label">Hours</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-value" id="minutes">--</span>
-                <span class="countdown-label">Minutes</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-value" id="seconds">--</span>
-                <span class="countdown-label">Seconds</span>
-            </div>
+        <div class="container scale" id="prizes">
+            <h1 class="textBlock scale">Prizes</h1>
+            <p class="textBlock scale">
+                We have no prizes.
+            </p>
         </div>
 
-        <div id="status" class="event-status" style="display: none;"></div>
-    </div>
+        <div class="container scale" id="sponsors">
+            <h1 class="textBlock scale">Sponsors</h1>
+            <p class="textBlock scale">
+                We have no sponsors.
+            </p>
+        </div>
 
-    <script>
-        const startTime = new Date('2026-08-21T12:00:00Z');
-        const endTime = new Date('2026-08-24T12:00:00Z');
+        <footer class="footer" id="socials">
+            <div class="">
+                contact: @gaslightctf.cooking
+                <h1>Find us at:</h1>
+                <nav class="navbar">
+                <a href="">Instagram</a>
+                <a href="">Twitter / X</a>
+                <a href="https://discord.gg/6pxSsj4hfr">Discord</a>
+                </nav>
 
-        function updateCountdown() {
-            const now = new Date();
-            const statusEl = document.getElementById('status');
-            const countdownEl = document.getElementById('countdown');
+            </div>
 
-            if (now >= endTime) {
-                countdownEl.style.display = 'none';
-                statusEl.style.display = 'inline-block';
-                statusEl.innerHTML = 'Event has ended. Thanks for participating!';
-                return;
-            }
-
-            if (now >= startTime) {
-                countdownEl.style.display = 'none';
-                statusEl.style.display = 'inline-block';
-                statusEl.innerHTML = '<span class="live-pulse"></span>Event is LIVE!';
-                return;
-            }
-
-            const diff = startTime - now;
-            
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        }
-
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-    </script>
-</body>
+        </footer>
+    </body>
 </html>
