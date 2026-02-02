@@ -113,9 +113,10 @@ footer {
     position: relative;
     font-family: 'VCR_OSD_MONO';
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 12px 24px;
     margin: 24px 10%;
     background-color: #282828;
@@ -131,7 +132,7 @@ footer {
 
 .container-empty {
     width: 100%;
-    align-items: center;
+    align-items: stretch;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
