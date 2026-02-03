@@ -1,0 +1,9 @@
+{
+  "name": "resources",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "2.3.14"
+  }
+}
