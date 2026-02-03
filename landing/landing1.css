@@ -177,6 +177,7 @@ footer{
     flex-wrap: wrap;
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 6px;
     padding-bottom: 24px;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -192,21 +193,21 @@ footer{
     overflow: show;
     flex: 1;
 }
-.container-empty{
+.emptyContainer{
     width: 100%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.textBlock{
+.textContainer{
     display: flex;
     flex-wrap: wrap;
     margin-top: 12px;
     margin-bottom: 2px;
     margin-left: 12px;
     margin-right: 12px;
-    flex-basis: 100%;
+    width: 100%;
     background-color: #303030;
     padding: 12px;
     align-items: center;
@@ -215,7 +216,7 @@ footer{
     box-shadow: 2px 2px 0px black;
     transition: transform 0.7s;
 }
-.textBlock img{
+.textContainer img{
     width: 1.25em;
     height: auto;
     padding-left: 0.8vw;
@@ -313,4 +314,12 @@ footer{
     text-shadow: 2px 2px 0px black;
     background-color: #262626;
 
+}
+.align-center{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.fit-text{
+    width: fit-content;
 }

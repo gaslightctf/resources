@@ -1,6 +1,6 @@
 //timer
-const startTime = new Date("2026-08-21T12:00:00Z");
-const endTime = new Date("2026-08-24T12:00:00Z");
+const startTime = new Date("2026-08-14T12:00:00Z");
+const endTime = new Date("2026-08-17T12:00:00Z");
 
 function updateCountdown() {
     const now = new Date();
