@@ -34,6 +34,7 @@
 @media (min-width: 1154px){
     .logo{
         left: 2.1%;
+        scale: 1.1;
     }
 }
 /* wide desktop */
@@ -43,12 +44,17 @@
     }
     .logo{
         left: 1%;
+        scale: 1.2;
     }
 }
 @media (min-width: 1400px){
     .timeBomb{
         right: 9%;
         scale: 0.7;
+    }
+    .logo{
+        left: 0.75%;
+        scale: 1.4;
     }
 }
 /* scrollbar */
