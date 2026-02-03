@@ -7,24 +7,48 @@
     font-family: 'VCR_OSD_MONO';
     src: url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
 }
-@media (min-width: 825px){
-    nav{
-        max-width: 550px;
-    }
-    .timeBomb{
-        right: 6%;
-        width: 40vw;
-        font-size: 27vw;
-    }
-    .desktop-width-40{
-        max-width: 40%;
-    }
-}
+/* phones */
 @media (max-width: 825px){
     .timeBomb{
         margin: auto;
         width: 80vw;
         font-size: 55vw;
+    }
+}
+/* medium desktop */
+@media (min-width: 825px){
+    nav{
+        max-width: 550px;
+    }
+    .timeBomb{
+        right: 8.2%;
+        width: 40vw;
+        font-size: 27vw;
+        scale: 0.95;
+    }
+    .desktop-width-35{
+        max-width: 45%;
+    }
+    
+}
+@media (min-width: 1154px){
+    .logo{
+        left: 2.1%;
+    }
+}
+/* wide desktop */
+@media (min-width: 1270px){
+    .timeBomb{
+        scale: 0.8;
+    }
+    .logo{
+        left: 1%;
+    }
+}
+@media (min-width: 1400px){
+    .timeBomb{
+        right: 9%;
+        scale: 0.7;
     }
 }
 /* scrollbar */
@@ -156,22 +180,20 @@ footer{
     padding-left: 0.8vw;
 }
 
-.logoAspectRatio{
-    width: 100%;
-    aspect-ratio: 25 / 11;
-}
 .logo{
     position: relative;
     display: inline;
-    scale: 1.1;
     transition: transform 0.7s;
 }
 .logo:hover{
     transform: scale(1.15);
 }
+.logo img{
+    width: 100%;
+    aspect-ratio: 25 / 11;
+}
 .overlayTop{
     position: absolute;
-
 }
 .navbar{
     list-style-type: none;
@@ -214,7 +236,6 @@ footer{
 .timeBomb{
     position: relative;
     height: auto;
-
     background-image: url(assets/timeBomb.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
