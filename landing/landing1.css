@@ -4,7 +4,7 @@
 	src: url(fonts/dogica/TTF/dogica.ttf);
 }
 @font-face {
-	font-family: "VCR_OSD_MONO";
+	font-family: "VCR_OSD_MONO", monospace;
 	src: url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
 }
 /* phones */
@@ -120,7 +120,7 @@ html {
 	margin: 0;
 }
 body {
-	font-family: "VCR_OSD_MONO";
+	font-family: "VCR_OSD_MONO", monospace;
 	image-rendering: pixelated;
 	align-items: center;
 	background-image: url("assets/siteBackground.png");
@@ -176,7 +176,7 @@ footer {
 
 .container {
 	position: relative;
-	font-family: "VCR_OSD_MONO";
+	font-family: "VCR_OSD_MONO", monospace;
 	display: flex;
 	align-items: baseline;
 	flex-direction: row;
@@ -293,7 +293,6 @@ footer {
 	color: red;
 	text-shadow: 2px 2px 0px black;
 	text-align: left;
-	height: auto;
 	margin-bottom: 2%;
 	aspect-ratio: 385 / 284;
 }
