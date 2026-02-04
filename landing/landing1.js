@@ -49,3 +49,53 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+document.addEventListener("DOMContentLoaded", () => {
+	const dateElements = document.querySelectorAll(".date-convert");
+
+	dateElements.forEach((el) => {
+		const timestampStr = el.getAttribute("data-timestamp");
+		const date = new Date(timestampStr);
+		const originalText = el.textContent;
+
+		el.addEventListener("mouseenter", () => {
+			const year = date.getFullYear();
+			const month = String(date.getMonth() + 1).padStart(2, "0");
+			const day = String(date.getDate()).padStart(2, "0");
+			const hours = String(date.getHours()).padStart(2, "0");
+			const minutes = String(date.getMinutes()).padStart(2, "0");
+
+			const offsetMins = -date.getTimezoneOffset();
+			const sign = offsetMins >= 0 ? "+" : "-";
+			const offsetHours = Math.floor(Math.abs(offsetMins) / 60);
+			const offsetRemainder = Math.abs(offsetMins) % 60;
+
+			let tzString = "GMT";
+			if (offsetMins !== 0) {
+				tzString += `${sign}${offsetHours}`;
+				if (offsetRemainder > 0) {
+					tzString += `:${String(offsetRemainder).padStart(2, "0")}`;
+				}
+			}
+
+			el.textContent = `${year}-${month}-${day} ${hours}:${minutes} (${tzString})`;
+		});
+
+		el.addEventListener("mouseleave", () => {
+			el.textContent = originalText;
+		});
+
+		el.addEventListener("click", () => {
+			const unixTimestamp = Math.floor(date.getTime() / 1000);
+			navigator.clipboard.writeText(unixTimestamp.toString()).catch((err) => {
+				console.error("Failed to copy: ", err);
+			});
+
+			const toast = document.getElementById("toast-notification");
+			toast.classList.add("show");
+			setTimeout(() => {
+				toast.classList.remove("show");
+			}, 3000);
+		});
+	});
+});

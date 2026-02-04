@@ -65,13 +65,15 @@
 		</div>
 
 		<div class="align-center fit-text emptyContainer">
-			<div
-				class="container scale align-center fit-text margin-sides-12px"
-				id="dates"
-			>
-				<h1 class="textContainer fit-text scale ">CTF Starts:</h1>
+			<div class="container scale align-center fit-text" id="dates">
 				<p class="textContainer fit-text scale">
-					(GMT) 14 Aug 2026 12:00 -> 17 Aug 12:00
+					<span class="date-convert" data-timestamp="2026-08-14T12:00:00Z"
+						>2026-08-14 12:00 (GMT)</span
+					>
+					&nbsp;-&gt;&nbsp;
+					<span class="date-convert" data-timestamp="2026-08-17T12:00:00Z"
+						>2026-08-17 12:00 (GMT)</span
+					>
 				</p>
 			</div>
 
@@ -154,5 +156,7 @@
 				<img src="assets/socialicon.png" alt="social icon">
 			</div>
 		</footer>
+
+		<div id="toast-notification">[+] Timestamp acquired.</div>
 	</body>
 </html>

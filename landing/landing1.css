@@ -389,3 +389,46 @@ small {
 	filter: drop-shadow(1px 1px 0px black);
 	width: 1.25em;
 }
+
+.date-convert {
+	border-bottom: 3px dotted white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.date-convert:hover {
+	border-bottom-style: solid;
+}
+
+#toast-notification {
+	visibility: hidden;
+	min-width: 250px;
+	background-color: #303030;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	position: fixed;
+	z-index: 1000;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	font-family: "VCR_OSD_MONO", monospace;
+	border: 2px solid #1e1e1e;
+	box-shadow: 2px 2px 0px black;
+	opacity: 0;
+	transition:
+		opacity 0.5s,
+		bottom 0.5s,
+		visibility 0s 0.5s;
+	text-shadow: 2px 2px 0px black;
+}
+
+#toast-notification.show {
+	visibility: visible;
+	opacity: 1;
+	bottom: 50px;
+	transition:
+		opacity 0.5s,
+		bottom 0.5s,
+		visibility 0s;
+}
