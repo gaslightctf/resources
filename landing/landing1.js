@@ -7,16 +7,19 @@ function updateCountdown() {
     const timeBomb = document.getElementById("timeBomb");
     const timer = document.getElementById("timer")
     const bombPlayButton = document.getElementById("bombPlayButton")
+    const preaccessSite = document.getElementById("accessSite")
     if (now >= endTime){
         timeBomb.style.backgroundImage = "url(assets/timeBomb.png)"; 
         timer.style.visibility = "visible";
         timer.innerHTML = "00:00 <br> GASLIGHTCTF <br> HAS ENDED"
         bombPlayButton.style.visibility = "hidden";
+        return
     }
     if (now >= startTime && now < endTime){ //started
         timeBomb.style.backgroundImage = "url(assets/timeBombBlown.png)"; 
         timer.style.visibility = "hidden";
         bombPlayButton.style.visibility = "visible";
+        preaccessSite.remove()
         return
     }
 	if (now < startTime) { //not started
