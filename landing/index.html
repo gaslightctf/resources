@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="landing1.css">
-    <script src="landing1.js" type="text/javascript" defer></script>
-    <title>gaslightCTF</title>
-    <link rel="icon" type="image/x-icon" href="assets/gaslighticoncolor.png">
-    <meta name="theme-color" content="#262626"/>
-    <meta name="color-scheme" content="dark light" />
-    <body>
-        <!--* hi -riley *-->
-        <header>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="landing1.css">
+	<script src="landing1.js" type="text/javascript" defer></script>
+	<title>gaslightCTF</title>
+	<link rel="icon" type="image/x-icon" href="assets/gaslighticoncolor.png">
+	<meta name="theme-color" content="#262626">
+	<meta name="color-scheme" content="dark light">
+	<body>
+		<!--* hi -riley *-->
+		<header>
+			<div class="logo">
+				<img
+					class="overlayTop"
+					src="assets/gaslightCTFlogo.gif"
+					alt="gaslightCTF logo"
+				>
+				<img class="" src="assets/logoBackground.png">
+			</div>
 
-            <div class="logo">
-                <img class="overlayTop" src="assets/gaslightCTFlogo.gif" alt="gaslightCTF logo">
-                <img class="" src="assets/logoBackground.png">
-            </div>
+			<nav class="navbar desktop-width-45">
+				<div><a href="/"
+					>home <img src="assets/homeicon.png" alt="home icon"></a
+				></div>
+				<div><a href="rules.html"
+					>rules <img src="assets/rulesicon.png" alt="rules icon"></a
+				></div>
+				<div><a href="#sponsors"
+					>sponsors <img src="assets/thankyouicon.png" alt="sponsors icon"></a
+				></div>
+				<div><a href="#socials"
+					>socials <img src="assets/socialicon.png" alt="socials loicon"></a
+				></div>
+			</nav>
+		</header>
 
-            <nav class="navbar desktop-width-45">
-                <div> 
-                    <a href="/">home <img src="assets/homeicon.png" alt="home icon"></a>
-                </div>
-                <div> 
-                    <a href="rules.html">rules <img src="assets/rulesicon.png" alt="rules icon"></a>
-                </div>
-                <div> 
-                    <a href="#sponsors">sponsors <img src="assets/thankyouicon.png" alt="sponsors icon"></a>
-                </div>
-                <div> 
-                    <a href="#socials">socials <img src="assets/socialicon.png" alt="socials loicon"></a>
-                </div>
-            </nav>
+		<div class="emptyContainer">
+			<div class="container scale desktop-width-45">
+				<h1 class="textContainer fit-text scale">
+					What is gaslightCTF? <img src="assets/homeicon.png" alt="ctf icon">
+				</h1>
+				<p class="textContainer scale">
+					We need main page, with logo and date/time. Two action buttons, one to
+					access the ctf platform and one for discord.
+					<br>
+					<br>
+					Focus on the fact that we are targeting beginners/UK secondary school
+					students. Similar to xxxxCTF theme.
+				</p>
+			</div>
 
-        </header>
+			<div class="timeBomb scale">
+				<h1 class="timer">
+					<span id="days">--</span> DAYS
+					<br>
+					<span id="hours">--</span> HOURS
+					<br>
+					<span id="minutes">--</span> MINUTES
+					<br>
+					<span id="seconds">--</span> SECONDS
+				</h1>
+			</div>
+		</div>
 
-        <div class="emptyContainer">
-            <div class="container scale desktop-width-45">
-                <h1 class="textContainer fit-text scale">What is gaslightCTF? <img src="assets/homeicon.png" alt="ctf icon"></h1>
-                <p class="textContainer scale">
-                    We need main page, with logo and date/time. Two action buttons, one to access the ctf platform and one for discord.
-                    <br><br>
-                    Focus on the fact that we are targeting beginners/UK secondary school students. Similar to xxxxCTF theme.
-                </p>
-            </div>
+		<div class="align-center fit-text emptyContainer">
+			<div class="container scale align-center fit-text" id="dates">
+				<h1 class="textContainer fit-text scale ">CTF starts:</h1>
+				<p class="textContainer fit-text scale">
+					(GMT) 14 Aug 2026 12:00 -> 17 Aug 12:00
+				</p>
+			</div>
+		</div>
 
-            <div class="timeBomb scale">
-                <h1 class= "timer" >
-                    <span id="days">--</span> DAYS<br>
-                    <span id="hours">--</span> HOURS<br>
-                    <span id="minutes">--</span> MINUTES<br>
-                    <span id="seconds">--</span> SECONDS
-                </h1>
-            </div>
-        </div>
+		<div class="container scale" id="prizes">
+			<h1 class="textContainer fit-text scale">
+				Prizes <img src="assets/leaderboard_prizeIcon.png" alt="prize icon">
+			</h1>
+			<p class="textContainer scale">We have no prizes.</p>
+		</div>
 
-        <div class="align-center fit-text emptyContainer">
-            <div class="container scale align-center fit-text" id="dates">
-                <h1 class="textContainer fit-text scale ">CTF starts:</h1>
-                <p class="textContainer fit-text scale">(GMT) 14 Aug 2026 12:00 -> 17 Aug 12:00</p>
-            </div>
-        </div>
+		<div class="container scale" id="sponsors">
+			<h1 class="textContainer fit-text scale">
+				Sponsors <img src="assets/thankyouicon.png" alt="leaderboard_prizeIcon">
+			</h1>
+			<p class="textContainer scale">We have no sponsors.</p>
+		</div>
 
-        <div class="container scale" id="prizes">
-            <h1 class="textContainer fit-text scale">Prizes <img src="assets/leaderboard_prizeIcon.png" alt="prize icon"></h1>
-            <p class="textContainer scale">
-                We have no prizes.
-            </p>
-        </div>
-
-        <div class="container scale" id="sponsors">
-            <h1 class="textContainer fit-text scale">Sponsors <img src="assets/thankyouicon.png" alt="leaderboard_prizeIcon"></h1>
-            <p class="textContainer scale">
-                We have no sponsors.
-            </p>
-        </div>
-
-        <footer class="footer" id="socials">
-            <div class="">
-                contact: @gaslightctf.cooking
-                <h1>Find us at:</h1>
-                <nav class="navbar">
-                <a href="">Instagram <img src="assets/instagramlogo.png" alt="instagram logo"></a>
-                <a href="">Twitter/X <img src="assets/twitxlogo.png" alt="twitter logo"></a>
-                <a href="https://discord.gg/6pxSsj4hfr">Discord <img src="assets/discordlogo.png" alt="discord logo"></a>
-                </nav>
-
-            </div>
-
-        </footer>
-    </body>
+		<footer class="footer" id="socials">
+			<div class="">
+				contact: @gaslightctf.cooking
+				<h1>Find us at:</h1>
+				<nav class="navbar">
+					<a href=""
+						>Instagram <img
+							src="assets/instagramlogo.png"
+							alt="instagram logo"
+						></a
+					>
+					<a href=""
+						>Twitter/X <img src="assets/twitxlogo.png" alt="twitter logo"></a
+					>
+					<a href="https://discord.gg/6pxSsj4hfr"
+						>Discord <img src="assets/discordlogo.png" alt="discord logo"></a
+					>
+				</nav>
+			</div>
+		</footer>
+	</body>
 </html>
