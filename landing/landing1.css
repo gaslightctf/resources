@@ -301,13 +301,14 @@ footer {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	overflow: visible;
-	display: block;
+	display: flex;
 	flex-direction: row;
 	color: red;
 	text-shadow: 2px 2px 0px black;
 	text-align: left;
 	margin-bottom: 2%;
 	aspect-ratio: 385 / 284;
+    visibility: visible;
 }
 .timeBomb h1 {
 	font-size: 10%;
@@ -315,8 +316,24 @@ footer {
 }
 .timer {
 	position: absolute;
+    visibility: visible;
 	top: 46.5%;
 	left: 38%;
+}
+.playButton {
+    background-image: url(assets/timeBombBlownButtonUp.png);
+    visibility: hidden;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    width: 12.5vw;
+    height: auto;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    aspect-ratio: 119/123;
+}
+.playButton:active {
+    background-image: url(assets/timeBombBlownButtonDown.png);
 }
 .align-center {
 	margin: auto;

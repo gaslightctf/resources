@@ -4,7 +4,22 @@ const endTime = new Date("2026-08-17T12:00:00Z");
 
 function updateCountdown() {
 	const now = new Date();
-	if (now <= endTime) {
+    const timeBomb = document.getElementById("timeBomb");
+    const timer = document.getElementById("timer")
+    const bombPlayButton = document.getElementById("bombPlayButton")
+    if (now >= endTime){
+        timeBomb.style.backgroundImage = "url(assets/timeBomb.png)"; 
+        timer.style.visibility = "visible";
+        timer.innerHTML = "00:00 <br> GASLIGHTCTF <br> HAS ENDED"
+        bombPlayButton.style.visibility = "hidden";
+    }
+    if (now >= startTime && now < endTime){ //started
+        timeBomb.style.backgroundImage = "url(assets/timeBombBlown.png)"; 
+        timer.style.visibility = "hidden";
+        bombPlayButton.style.visibility = "visible";
+        return
+    }
+	if (now < startTime) { //not started
 		const diff = startTime - now;
 
 		const days = Math.floor(diff / (1000 * 60 * 60 * 24));
