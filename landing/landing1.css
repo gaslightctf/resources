@@ -161,6 +161,18 @@ footer {
 	justify-content: space-evenly;
 	align-items: center;
 	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1rem 0;
+	line-height: 130%;
+	text-align: center;
+	box-sizing: border-box;
+	color: white;
+	text-shadow: 2px 2px 0px black;
+	background-color: #262626;
 }
 /* classes */
 .scale {
@@ -253,6 +265,8 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+
+	margin-bottom: 1em;
 }
 .navbar a {
 	color: white;
@@ -263,13 +277,12 @@ footer {
 	padding-top: 1.5vw;
 	padding-bottom: 1.5vw;
 	min-height: 2em;
-	min-width: 2em;
+	min-width: 3em;
 	display: flex;
 	text-align: center;
 	align-items: center;
 	text-shadow: 2px 2px 0px black;
 	box-shadow: 2px 2px 0px black;
-	flex: 1;
 	transition: transform 0.3s;
 }
 .navbar a img {
@@ -305,19 +318,6 @@ footer {
 	top: 46.5%;
 	left: 38%;
 }
-.footer {
-	width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 1rem 0;
-	line-height: 130%;
-	text-align: center;
-	align-items: center;
-	box-sizing: border-box;
-	color: white;
-	text-shadow: 2px 2px 0px black;
-	background-color: #262626;
-}
 .align-center {
 	margin: auto;
 	align-items: center;
@@ -325,4 +325,27 @@ footer {
 }
 .fit-text {
 	width: fit-content;
+}
+
+#email {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: fit-content;
+	gap: 0.5em;
+}
+
+#email > a {
+	color: white;
+	text-decoration: none;
+	padding: 1px;
+	border-bottom: 2px dotted white;
+}
+#email > a:hover {
+	border-bottom: 2px solid white;
+}
+#email > img {
+	width: 1.25em;
 }
