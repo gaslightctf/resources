@@ -179,6 +179,9 @@ footer {
 	color: white;
 	background-color: #262626;
 }
+small{
+    font-size: 0.75em;
+}
 /* classes */
 .scale {
 	transition: transform 0.7s;
