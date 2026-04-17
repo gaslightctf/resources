@@ -65,19 +65,19 @@ p {
 }
 /* unvisited link */
 a:link {
-  color: rgb(86, 103, 255);
+	color: #5667ff;
 }
 /* visited link */
 a:visited {
-  color: rgb(52, 71, 240);
+	color: #3447f0;
 }
 /* mouse over link */
 a:hover {
-  color: rgb(151, 162, 255);
+	color: #97a2ff;
 }
 /* selected link */
 a:active {
-  color: rgb(95, 95, 255);
+	color: #5f5fff;
 }
 div {
 	display: block;
@@ -399,6 +399,9 @@ p.text-container {
 	}
 	.play-button {
 		margin: auto;
+	}
+	.container--narrow {
+		max-width: 100%;
 	}
 	code {
 		overflow-wrap: break-word;
