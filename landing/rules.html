@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="landing1.css">
-		<script src="landing1.js" type="text/javascript" defer></script>
+		<link rel="stylesheet" href="landing.css">
 		<title>gaslightCTF</title>
 		<link rel="icon" type="image/x-icon" href="assets/gaslighticoncolor.png">
 		<meta
@@ -23,18 +22,26 @@
 				<img src="assets/logoBackground.png">
 			</div>
 			<nav class="navbar">
-				<div><a href="/"
-					>home <img src="assets/homeicon.png" alt="home icon"></a
-				></div>
-				<div><a href="rules.html"
-					>rules <img src="assets/rulesicon.png" alt="rules icon"></a
-				></div>
-				<div><a href="/#sponsors"
-					>sponsors <img src="assets/thankyouicon.png" alt="sponsors icon"></a
-				></div>
-				<div><a href="#footer"
-					>socials <img src="assets/socialicon.png" alt="socials icon"></a
-				></div>
+				<div
+					><a href="/"
+						>home <img src="assets/homeicon.png" alt="home icon"></a
+					></div
+				>
+				<div
+					><a href="rules.html"
+						>rules <img src="assets/rulesicon.png" alt="rules icon"></a
+					></div
+				>
+				<div
+					><a href="/#sponsors"
+						>sponsors <img src="assets/thankyouicon.png" alt="sponsors icon"></a
+					></div
+				>
+				<div
+					><a href="#footer"
+						>socials <img src="assets/socialicon.png" alt="socials icon"></a
+					></div
+				>
 			</nav>
 		</header>
 
@@ -59,8 +66,9 @@
 			</p>
 			<p class="text-container scale">
 				• The flag format regex is
-				<code>/gaslightCTF { [\w\-_!?]+}/</code>. For example:
-				<code>gaslightCTF { w3lc0me_2_g4sl1ghtCTF!}</code>
+				<!-- without entities here for the { biome formats it weirdly for some stupid reason -->
+				<code>/gaslightCTF&lcub;[\w\-_!?]+}/</code>. For example:
+				<code>gaslightCTF&lcub;w3lc0me_2_g4sl1ghtCTF!}</code>
 			</p>
 			<p class="text-container scale">
 				• Online resources and tools are fair game. Automated scanners/solvers
@@ -81,10 +89,8 @@
 			<h1>Find us on:</h1>
 			<nav class="navbar">
 				<a href=""
-					>Instagram <img
-						src="assets/instagramlogo.png"
-						alt="instagram logo"
-					></a
+					>Instagram
+					<img src="assets/instagramlogo.png" alt="instagram logo"></a
 				>
 				<a href=""
 					>Twitter/X <img src="assets/twitxlogo.png" alt="twitter logo"></a
