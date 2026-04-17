@@ -94,6 +94,9 @@ footer {
 	color: white;
 	background-color: var(--color-footer);
 }
+code {
+	color: yellow;
+}
 
 /* === Layout === */
 .content-row {
