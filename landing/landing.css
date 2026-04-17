@@ -368,6 +368,9 @@ p.text-container {
 		margin-left: 4.5%;
 		margin-right: 4.5%;
 	}
+	.container--narrow {
+		max-width: 100%;
+	}
 }
 /* Medium desktop */
 @media (min-width: 910px) {
