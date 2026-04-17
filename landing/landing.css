@@ -61,7 +61,7 @@ h1 {
 }
 p {
 	font-size: 1.2em;
-	line-height: 1em;
+	line-height: 1.3em;
 }
 /* unvisited link */
 a:link {
@@ -384,8 +384,25 @@ p.text-container {
 		margin-left: 4.5%;
 		margin-right: 4.5%;
 	}
-	.container--narrow {
-		max-width: 100%;
+	.container {
+		margin: 16px;
+		width: 100%;
+		max-width: calc(100% - 32px);
+		flex: 1 1 100%;
+		box-sizing: border-box;
+	}
+	.text-container {
+		margin-left: 8px;
+		margin-right: 8px;
+		width: calc(100% - 16px);
+		box-sizing: border-box;
+	}
+	.play-button {
+		margin: auto;
+	}
+	code {
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 }
 /* Medium desktop */
