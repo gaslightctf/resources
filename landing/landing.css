@@ -63,6 +63,22 @@ p {
 	font-size: 1.2em;
 	line-height: 1em;
 }
+/* unvisited link */
+a:link {
+  color: rgb(86, 103, 255);
+}
+/* visited link */
+a:visited {
+  color: rgb(52, 71, 240);
+}
+/* mouse over link */
+a:hover {
+  color: rgb(151, 162, 255);
+}
+/* selected link */
+a:active {
+  color: rgb(95, 95, 255);
+}
 div {
 	display: block;
 	unicode-bidi: isolate;
