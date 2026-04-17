@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="landing1.css">
 	<script src="landing1.js" type="text/javascript" defer></script>
@@ -7,19 +8,20 @@
 	<link rel="icon" type="image/x-icon" href="assets/gaslighticoncolor.png">
 	<meta name="theme-color" content="#262626">
 	<meta name="color-scheme" content="dark light">
-	<body>
+</head>
+<body>
 		<!--* hi -riley *-->
 		<header>
 			<div class="logo">
 				<img
-					class="overlayTop"
+					class="overlay-top"
 					src="assets/gaslightCTFlogo.gif"
 					alt="gaslightCTF logo"
 				>
-				<img class="" src="assets/logoBackground.png">
+				<img src="assets/logoBackground.png">
 			</div>
 
-			<nav class="navbar desktop-width-45">
+			<nav class="navbar container--narrow">
 				<div><a href="/"
 					>home <img src="assets/homeicon.png" alt="home icon"></a
 				></div>
@@ -35,12 +37,12 @@
 			</nav>
 		</header>
 
-		<div class="emptyContainer">
-			<div class="container scale desktop-width-45">
-				<h1 class="textContainer fit-text scale">
+		<div class="content-row">
+			<div class="container scale container--narrow">
+				<h1 class="text-container fit-text scale">
 					What is gaslightCTF? <img src="assets/homeicon.png" alt="ctf icon">
 				</h1>
-				<p class="textContainer scale">
+				<p class="text-container scale">
 					gaslightCTF is a capture the flag competition targeted mainly towards
 					beginners / UK secondary school students. But everyone is welcome.
 					<br>
@@ -50,7 +52,7 @@
 				</p>
 			</div>
 
-			<div id="timeBomb" class="timeBomb scale">
+			<div id="timeBomb" class="time-bomb scale">
 				<h1 id="timer" class="timer">
 					<span id="days">--</span> DAYS
 					<br>
@@ -60,13 +62,13 @@
 					<br>
 					<span id="seconds">--</span> SECONDS
 				</h1>
-				<a id="bombPlayButton" class="playButton scale"></a>
+				<a id="bombPlayButton" class="play-button scale"></a>
 			</div>
 		</div>
 
-		<div class="align-center fit-text emptyContainer">
+		<div class="align-center fit-text content-row">
 			<div class="container scale align-center fit-text" id="dates">
-				<p class="textContainer fit-text scale">
+				<p class="text-container fit-text scale">
 					<span class="date-convert" data-timestamp="2026-08-14T12:00:00Z"
 						>2026-08-14 12:00 (GMT)</span
 					>
@@ -79,12 +81,12 @@
 
 			<div
 				id="accessSite"
-				class="align-center emptyContainer fit-text margin-sides-12px"
+				class="align-center content-row fit-text content-inset"
 			>
 				<div class="container scale align-center fit-text">
-					<p class="textContainer fit-text scale ">Access Site:</p>
+					<p class="text-container fit-text scale">Access Site:</p>
 					<a
-						class="playButton scale"
+						class="play-button scale"
 						href="https://play.gaslightctf.cooking/"
 						target="_blank"
 					></a>
@@ -92,11 +94,11 @@
 			</div>
 		</div>
 
-		<div class="container scale" id="">
-			<h1 class="textContainer fit-text scale">
+		<div class="container scale">
+			<h1 class="text-container fit-text scale">
 				Extra Info <img src="assets/rulesicon.png" alt="info icon">
 			</h1>
-			<p class="textContainer scale">
+			<p class="text-container scale">
 				gaslightCTF is developed by two aspiring UK students. <br>
 				<br>
 				After participating in and realizing most CTF (capture the flag)
@@ -113,23 +115,24 @@
 		</div>
 
 		<div class="container scale" id="prizes">
-			<h1 class="textContainer fit-text scale">
+			<h1 class="text-container fit-text scale">
 				Prizes <img src="assets/leaderboard_prizeIcon.png" alt="prize icon">
 			</h1>
-			<p class="textContainer scale">We have no prizes. (yet)</p>
+			<p class="text-container scale">We have no prizes. (yet)</p>
 		</div>
 
 		<div class="container scale" id="sponsors">
-			<h1 class="textContainer fit-text scale">
+			<h1 class="text-container fit-text scale">
 				Sponsors <img src="assets/thankyouicon.png" alt="sponsors icon">
 			</h1>
-			<p class="textContainer scale">
+			<p class="text-container scale">
 				We have no sponsors. (yet)
 				<br>
 				<br>
 				If you are interested in sponsoring us, please send us an email at:
-				<a href="mailto:contact@gaslightctf.cooking" style="font-size: 0.8em">contact@gaslightctf.cooking</a>
-				<img src="assets/socialicon.png" alt="social icon">
+				<span style="display: inline-flex; align-items: center; gap: 0.5em; white-space: nowrap"><a href="mailto:contact@gaslightctf.cooking" style="font-size: 0.8em"
+					>contact@gaslightctf.cooking</a
+				><img src="assets/socialicon.png" alt="social icon" style="padding-left: 0"></span>
 			</p>
 		</div>
 
