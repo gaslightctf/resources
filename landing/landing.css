@@ -392,6 +392,12 @@ h1.textContainer {
 		margin-left: 4.5%;
 		margin-right: 4.5%;
 	}
+	body {
+		font-size: 0.75em;
+	}
+	h1 {
+		font-size: 1.7em;
+	}
 	.container {
 		margin: 16px;
 		width: 100%;
