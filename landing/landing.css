@@ -422,8 +422,8 @@ h1.textContainer {
 /* Medium desktop */
 @media (min-width: 910px) {
 	.logo {
-		left: 2%;
-		scale: 1;
+		left: -1%;
+		scale: 1.1;
 	}
 	.timeBomb {
 		right: 5.2%;
@@ -438,13 +438,13 @@ h1.textContainer {
 		font-size: 1.8em;
 	}
 }
-@media (min-width: 1190px) {
+@media (min-width: 1184px) {
 	.timeBomb {
 		right: 6.5%;
 		scale: 1;
 	}
 	.logo {
-		left: 2.1%;
+		left: 1.4%;
 		scale: 1.2;
 	}
 	body {
