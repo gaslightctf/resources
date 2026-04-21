@@ -59,6 +59,9 @@ h1 {
 	font-size: 2em;
 	line-height: 1em;
 }
+h1 img{
+	margin-left: auto;
+}
 p {
 	font-size: 1.2em;
 	line-height: 1.3em;
@@ -159,6 +162,9 @@ code {
 }
 p.textContainer {
 	display: block;
+}
+h1.textContainer {
+	width: fit-content
 }
 .textContainer img {
 	width: 1.25em;
@@ -367,7 +373,7 @@ p.textContainer {
 	margin-left: 12px;
 	margin-right: 12px;
 }
-/* Constrains to 45% width — used alongside the timebomb on desktop */
+/*restrict size,,, ignore on*/
 .container--narrow {
 	max-width: 45%;
 }
@@ -377,8 +383,10 @@ p.textContainer {
 @media (max-width: 910px) {
 	.timeBomb {
 		margin: auto;
+		margin-bottom: 5%;
 		width: 80vw;
 		font-size: 55vw;
+		scale: 0.95;
 	}
 	header {
 		margin-left: 4.5%;
@@ -398,7 +406,11 @@ p.textContainer {
 		box-sizing: border-box;
 	}
 	.playButton {
+		scale: 1.2;
 		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 2%
+		
 	}
 	.container--narrow {
 		max-width: 100%;
@@ -418,10 +430,16 @@ p.textContainer {
 		right: 5.2%;
 		width: 40vw;
 		font-size: 27vw;
-		scale: 1.1;
+		scale: 1;
+	}
+	body {
+		font-size: 0.7em;
+	}
+	h1 {
+		font-size: 1.8em;
 	}
 }
-@media (min-width: 1154px) {
+@media (min-width: 1190px) {
 	.timeBomb {
 		right: 6.5%;
 		scale: 1;
@@ -430,9 +448,15 @@ p.textContainer {
 		left: 2.1%;
 		scale: 1.2;
 	}
+	body {
+		font-size: 0.9em;
+	}
+	h1 {
+		font-size: 2em;
+	}
 }
 /* Wide desktop */
-@media (min-width: 1270px) {
+@media (min-width: 1286px) {
 	.timeBomb {
 		right: 7.5%;
 		scale: 0.9;
@@ -445,7 +469,7 @@ p.textContainer {
 		font-size: medium;
 	}
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
 	.timeBomb {
 		right: 7.5%;
 		scale: 0.8;
