@@ -224,8 +224,11 @@ h1.textContainer {
 	padding-left: 1vw;
 }
 .navbar a:hover {
-	background-color: #858585;
+	background-color: #777777;
 	transform: scale(1.1);
+}
+.navbar a:active {
+	background-color: #858585;
 }
 
 .timeBomb {
