@@ -373,8 +373,11 @@ h1.textContainer {
 	margin-left: 12px;
 	margin-right: 12px;
 }
-/*restrict size,,, ignore on*/
+/*restrict size,,, reduce on mobile*/
 .container--narrow {
+	max-width: 45%;
+}
+.navbar--narrow {
 	max-width: 45%;
 }
 
@@ -417,6 +420,9 @@ h1.textContainer {
 		margin-top: 10%;
 		margin-bottom: 2%;
 	}
+	.navbar--narrow {
+		max-width: 78%;
+	}
 	.container--narrow {
 		max-width: 100%;
 	}
@@ -428,14 +434,17 @@ h1.textContainer {
 /* Medium desktop */
 @media (min-width: 910px) {
 	.logo {
-		left: -1%;
-		scale: 1.1;
+		left: -3%;
+		scale: 1.0;
 	}
 	.timeBomb {
 		right: 5.2%;
 		width: 40vw;
 		font-size: 27vw;
 		scale: 1;
+	}
+	.navbar--narrow {
+		margin-left: -5%;
 	}
 	body {
 		font-size: 0.7em;
@@ -450,8 +459,11 @@ h1.textContainer {
 		scale: 1;
 	}
 	.logo {
-		left: 1.4%;
+		left: 0.6%;
 		scale: 1.2;
+	}
+	.navbar--narrow {
+		margin-left: 0;
 	}
 	body {
 		font-size: 0.9em;
@@ -480,21 +492,27 @@ h1.textContainer {
 		scale: 0.8;
 	}
 	.logo {
-		left: 2.5%;
+		left: 3.8%;
 		scale: 1.4;
+	}
+	.navbar--narrow {
+		margin-left: 6%;
 	}
 	body {
 		font-size: large;
 	}
 }
-@media (min-width: 1750px) {
+@media (min-width: 1860px) {
 	.timeBomb {
-		right: 9.7%;
+		right: 7.5%;
 		scale: 0.8;
+	}
+	.navbar--narrow {
+		margin-left: 5%;
 	}
 	.logo {
 		left: 0%;
-		right: 10%;
+		right: 0%;
 		scale: 1.6;
 	}
 	body {
@@ -506,9 +524,9 @@ h1.textContainer {
 		margin-right: 1.5%;
 	}
 }
-@media (min-width: 2200px) {
+@media (min-width: 2400px) {
 	.timeBomb {
-		right: 11%;
+		right: 9%;
 		scale: 0.8;
 	}
 	body {
