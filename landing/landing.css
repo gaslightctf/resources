@@ -435,7 +435,7 @@ h1.textContainer {
 @media (min-width: 910px) {
 	.logo {
 		left: -3%;
-		scale: 1.0;
+		scale: 1;
 	}
 	.timeBomb {
 		right: 5.2%;
