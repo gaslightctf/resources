@@ -440,6 +440,10 @@ h1.textContainer {
 		font-size: 27vw;
 		scale: 1;
 	}
+	.textContainer {
+		/* top right/left bottom */
+		margin: 1vw 1vw 0.5vw;
+	}
 	.navbar--narrow {
 		margin-left: -5%;
 	}
