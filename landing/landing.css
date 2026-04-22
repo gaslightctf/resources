@@ -10,7 +10,7 @@
 	--transition-scale: transform 0.7s;
 }
 
-/* === Fonts === */
+/*fonts*/
 @font-face {
 	font-family: "dogica";
 	src: url(fonts/dogica/TTF/dogica.ttf);
@@ -20,7 +20,7 @@
 	src: url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf);
 }
 
-/* === Scrollbar === */
+/* scrollbar */
 ::-webkit-scrollbar {
 	width: 12px;
 }
@@ -231,7 +231,6 @@ h1.textContainer {
 .timeBomb {
 	position: relative;
 	height: auto;
-	/* Coordinates are calibrated to match the timeBomb.png sprite */
 	background-image: url(assets/timeBomb.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -250,9 +249,8 @@ h1.textContainer {
 	line-height: 100%;
 }
 .timer {
-	position: absolute;
+	position: absolute; /*like anything with position: absolute; is manually positioned */
 	visibility: visible;
-	/* Aligned to the display area of the timeBomb.png sprite */
 	top: 46.5%;
 	left: 38%;
 }
@@ -261,7 +259,6 @@ h1.textContainer {
 	width: 30%;
 	height: auto;
 	position: absolute;
-	/* Aligned to the button area of the timeBombBlown.png sprite */
 	top: 41%;
 	left: 44%;
 }
@@ -373,7 +370,7 @@ h1.textContainer {
 	margin-left: 12px;
 	margin-right: 12px;
 }
-/*restrict size,,, reduce on mobile*/
+/*restrict size,,, increase on mobile*/
 .container--narrow {
 	max-width: 45%;
 }
@@ -381,7 +378,7 @@ h1.textContainer {
 	max-width: 45%;
 }
 
-/* === Responsive === */
+/* responsiveness */
 /* Mobile */
 @media (max-width: 910px) {
 	.timeBomb {
