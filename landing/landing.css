@@ -421,7 +421,7 @@ h1.textContainer {
 		margin-bottom: 2%;
 	}
 	.navbar--narrow {
-		max-width: 78%;
+		max-width: 100%;
 	}
 	.container--narrow {
 		max-width: 100%;
