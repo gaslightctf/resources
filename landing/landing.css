@@ -293,7 +293,7 @@ h1.textContainer {
 }
 
 #sponsors > div.textContainer {
-	display: block !important;
+	display: block;
 }
 
 #sponsors-container {
