@@ -300,9 +300,19 @@ h1.textContainer {
 	display: flex;
 	place-content: center;
 }
+
+#sponsors-container > div {
+	display: flex;
+	flex-direction: column;
+
+	place-items: center;
+	text-align: center;
+}
+
 .sponsor-logo {
 	display: block;
 	height: 3em;
+	padding: 0 auto;
 }
 
 /* === IDs === */
