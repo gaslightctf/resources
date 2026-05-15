@@ -292,6 +292,19 @@ h1.textContainer {
 	border-bottom-style: solid;
 }
 
+#sponsors > div.textContainer {
+	display: block !important;
+}
+
+#sponsors-container {
+	display: flex;
+	place-content: center;
+}
+.sponsor-logo {
+	display: block;
+	height: 3em;
+}
+
 /* === IDs === */
 #email {
 	display: flex;
