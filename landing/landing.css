@@ -298,6 +298,7 @@ h1.textContainer {
 
 #sponsors-container {
 	display: flex;
+	flex-direction: column;
 	place-content: center;
 }
 
@@ -311,7 +312,7 @@ h1.textContainer {
 
 .sponsor-logo {
 	display: block;
-	height: 3em;
+	height: 4em;
 	padding: 0 auto;
 }
 
